@@ -10,6 +10,14 @@
 
 @interface UIImage (ASMPDF)
 
+typedef NS_OPTIONS(NSInteger, ASMPDFCaching)
+{
+	ASMPDFNoCache		= 0,
+	ASMPDFDiskCache		= 1 << 0,
+	ASMPDFMemoryCache	= 1 << 1,
+};
+
++ (void)setASMPDFCacheType:(ASMPDFCaching)cacheType;
 
 + (instancetype)imageWithPDFatURL:(NSURL*)url
 				  destinationSize:(CGSize)destSize;

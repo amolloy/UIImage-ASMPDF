@@ -9,11 +9,14 @@
 #import "ASMAppDelegate.h"
 
 #import "ASMViewController.h"
+#import "UIImage+ASMPDF.h"
 
 @implementation ASMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[UIImage setASMPDFCacheType:ASMPDFDiskCache | ASMPDFMemoryCache];
+	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	self.viewController = [[ASMViewController alloc] initWithNibName:@"ASMViewController" bundle:nil];
