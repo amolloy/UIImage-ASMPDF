@@ -10,8 +10,26 @@
 
 @interface UIImage (ASMPDF)
 
-+ (instancetype)imageWithPDFatURL:(NSURL*)url destinationSize:(CGSize)destSize cropRect:(CGRect)cropRect;
-- (UIImage*)initWithPDFatURL:(NSURL*)url destinationSize:(CGSize)destSize cropRect:(CGRect)cropRect;
+
++ (instancetype)imageWithPDFatURL:(NSURL*)url
+				  destinationSize:(CGSize)destSize;
+
++ (instancetype)imageWithPDFatURL:(NSURL*)url
+				  destinationSize:(CGSize)destSize
+						 cropRect:(CGRect)cropRect;
+
++ (instancetype)imageWithPDFatURL:(NSURL*)url
+				  destinationSize:(CGSize)destSize
+						   opaque:(BOOL)opaque
+							scale:(CGFloat)scale
+						 cropRect:(CGRect)cropRect;
+
+- (UIImage*)initWithPDFatURL:(NSURL*)url
+			 destinationSize:(CGSize)destSize;
+
+- (UIImage*)initWithPDFatURL:(NSURL*)url
+			 destinationSize:(CGSize)destSize
+					cropRect:(CGRect)cropRect;
 
 - (UIImage*)initWithPDFatURL:(NSURL*)url
 			 destinationSize:(CGSize)destSize

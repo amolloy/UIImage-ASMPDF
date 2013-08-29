@@ -10,12 +10,47 @@
 
 @implementation UIImage (ASMPDF)
 
-+ (instancetype)imageWithPDFatURL:(NSURL*)url destinationSize:(CGSize)destSize cropRect:(CGRect)cropRect
++ (instancetype)imageWithPDFatURL:(NSURL*)url
+				  destinationSize:(CGSize)destSize
 {
-	return [[self alloc] initWithPDFatURL:url destinationSize:destSize cropRect:cropRect];
+	return [[self alloc] initWithPDFatURL:url destinationSize:destSize];
 }
 
-- (UIImage*)initWithPDFatURL:(NSURL*)url destinationSize:(CGSize)destSize cropRect:(CGRect)cropRect
++ (instancetype)imageWithPDFatURL:(NSURL*)url
+				  destinationSize:(CGSize)destSize
+						 cropRect:(CGRect)cropRect
+{
+	return [[self alloc] initWithPDFatURL:url
+						  destinationSize:destSize
+								 cropRect:cropRect];
+}
+
++ (instancetype)imageWithPDFatURL:(NSURL*)url
+				  destinationSize:(CGSize)destSize
+						   opaque:(BOOL)opaque
+							scale:(CGFloat)scale
+						 cropRect:(CGRect)cropRect
+{
+	return [[self alloc] initWithPDFatURL:url
+						  destinationSize:destSize
+								   opaque:opaque
+									scale:scale
+								 cropRect:cropRect];
+}
+
+- (UIImage*)initWithPDFatURL:(NSURL*)url
+			 destinationSize:(CGSize)destSize
+{
+	return [self initWithPDFatURL:url
+				  destinationSize:destSize
+						   opaque:YES
+							scale:[UIScreen mainScreen].scale
+						 cropRect:CGRectZero];
+}
+
+- (UIImage*)initWithPDFatURL:(NSURL*)url
+			 destinationSize:(CGSize)destSize
+					cropRect:(CGRect)cropRect
 {
 	return [self initWithPDFatURL:url
 				  destinationSize:destSize
