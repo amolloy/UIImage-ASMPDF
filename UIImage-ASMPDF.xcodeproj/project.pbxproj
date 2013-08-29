@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B435F9DE17CF8F3C00E02558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435F9DD17CF8F3C00E02558 /* UIKit.framework */; };
+		B435F9E017CF8F3C00E02558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435F9DF17CF8F3C00E02558 /* Foundation.framework */; };
+		B435F9E217CF8F3C00E02558 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435F9E117CF8F3C00E02558 /* CoreGraphics.framework */; };
+		B435F9E817CF8F3C00E02558 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B435F9E617CF8F3C00E02558 /* InfoPlist.strings */; };
+		B435F9EA17CF8F3C00E02558 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B435F9E917CF8F3C00E02558 /* main.m */; };
+		B435F9EE17CF8F3C00E02558 /* ASMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B435F9ED17CF8F3C00E02558 /* ASMAppDelegate.m */; };
+		B435F9F017CF8F3C00E02558 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B435F9EF17CF8F3C00E02558 /* Default.png */; };
+		B435F9F217CF8F3C00E02558 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B435F9F117CF8F3C00E02558 /* Default@2x.png */; };
+		B435F9F417CF8F3C00E02558 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B435F9F317CF8F3C00E02558 /* Default-568h@2x.png */; };
+		B435F9F717CF8F3C00E02558 /* ASMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B435F9F617CF8F3C00E02558 /* ASMViewController.m */; };
+		B435F9FA17CF8F3C00E02558 /* ASMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B435F9F817CF8F3C00E02558 /* ASMViewController.xib */; };
+		B435FA0317CF8F9C00E02558 /* UIImage+ASMPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = B435FA0217CF8F9C00E02558 /* UIImage+ASMPDF.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B435F9DA17CF8F3C00E02558 /* UIImage-ASMPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIImage-ASMPDF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B435F9DD17CF8F3C00E02558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B435F9DF17CF8F3C00E02558 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B435F9E117CF8F3C00E02558 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B435F9E517CF8F3C00E02558 /* UIImage-ASMPDF-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIImage-ASMPDF-Info.plist"; sourceTree = "<group>"; };
+		B435F9E717CF8F3C00E02558 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B435F9E917CF8F3C00E02558 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B435F9EB17CF8F3C00E02558 /* UIImage-ASMPDF-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage-ASMPDF-Prefix.pch"; sourceTree = "<group>"; };
+		B435F9EC17CF8F3C00E02558 /* ASMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASMAppDelegate.h; sourceTree = "<group>"; };
+		B435F9ED17CF8F3C00E02558 /* ASMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASMAppDelegate.m; sourceTree = "<group>"; };
+		B435F9EF17CF8F3C00E02558 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B435F9F117CF8F3C00E02558 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B435F9F317CF8F3C00E02558 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B435F9F517CF8F3C00E02558 /* ASMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASMViewController.h; sourceTree = "<group>"; };
+		B435F9F617CF8F3C00E02558 /* ASMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASMViewController.m; sourceTree = "<group>"; };
+		B435F9F917CF8F3C00E02558 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASMViewController.xib; sourceTree = "<group>"; };
+		B435FA0117CF8F9C00E02558 /* UIImage+ASMPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASMPDF.h"; sourceTree = "<group>"; };
+		B435FA0217CF8F9C00E02558 /* UIImage+ASMPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASMPDF.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B435F9D717CF8F3C00E02558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435F9DE17CF8F3C00E02558 /* UIKit.framework in Frameworks */,
+				B435F9E017CF8F3C00E02558 /* Foundation.framework in Frameworks */,
+				B435F9E217CF8F3C00E02558 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B435F9D117CF8F3C00E02558 = {
+			isa = PBXGroup;
+			children = (
+				B435F9E317CF8F3C00E02558 /* UIImage-ASMPDF */,
+				B435F9DC17CF8F3C00E02558 /* Frameworks */,
+				B435F9DB17CF8F3C00E02558 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B435F9DB17CF8F3C00E02558 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B435F9DA17CF8F3C00E02558 /* UIImage-ASMPDF.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B435F9DC17CF8F3C00E02558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B435F9DD17CF8F3C00E02558 /* UIKit.framework */,
+				B435F9DF17CF8F3C00E02558 /* Foundation.framework */,
+				B435F9E117CF8F3C00E02558 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B435F9E317CF8F3C00E02558 /* UIImage-ASMPDF */ = {
+			isa = PBXGroup;
+			children = (
+				B435FA0017CF8F8500E02558 /* UIImage+ASMPDF */,
+				B435F9EC17CF8F3C00E02558 /* ASMAppDelegate.h */,
+				B435F9ED17CF8F3C00E02558 /* ASMAppDelegate.m */,
+				B435F9F517CF8F3C00E02558 /* ASMViewController.h */,
+				B435F9F617CF8F3C00E02558 /* ASMViewController.m */,
+				B435F9F817CF8F3C00E02558 /* ASMViewController.xib */,
+				B435F9E417CF8F3C00E02558 /* Supporting Files */,
+			);
+			path = "UIImage-ASMPDF";
+			sourceTree = "<group>";
+		};
+		B435F9E417CF8F3C00E02558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B435F9E517CF8F3C00E02558 /* UIImage-ASMPDF-Info.plist */,
+				B435F9E617CF8F3C00E02558 /* InfoPlist.strings */,
+				B435F9E917CF8F3C00E02558 /* main.m */,
+				B435F9EB17CF8F3C00E02558 /* UIImage-ASMPDF-Prefix.pch */,
+				B435F9EF17CF8F3C00E02558 /* Default.png */,
+				B435F9F117CF8F3C00E02558 /* Default@2x.png */,
+				B435F9F317CF8F3C00E02558 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B435FA0017CF8F8500E02558 /* UIImage+ASMPDF */ = {
+			isa = PBXGroup;
+			children = (
+				B435FA0117CF8F9C00E02558 /* UIImage+ASMPDF.h */,
+				B435FA0217CF8F9C00E02558 /* UIImage+ASMPDF.m */,
+			);
+			path = "UIImage+ASMPDF";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B435F9D917CF8F3C00E02558 /* UIImage-ASMPDF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B435F9FD17CF8F3C00E02558 /* Build configuration list for PBXNativeTarget "UIImage-ASMPDF" */;
+			buildPhases = (
+				B435F9D617CF8F3C00E02558 /* Sources */,
+				B435F9D717CF8F3C00E02558 /* Frameworks */,
+				B435F9D817CF8F3C00E02558 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIImage-ASMPDF";
+			productName = "UIImage-ASMPDF";
+			productReference = B435F9DA17CF8F3C00E02558 /* UIImage-ASMPDF.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B435F9D217CF8F3C00E02558 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ASM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andy Molloy";
+			};
+			buildConfigurationList = B435F9D517CF8F3C00E02558 /* Build configuration list for PBXProject "UIImage-ASMPDF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B435F9D117CF8F3C00E02558;
+			productRefGroup = B435F9DB17CF8F3C00E02558 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B435F9D917CF8F3C00E02558 /* UIImage-ASMPDF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B435F9D817CF8F3C00E02558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435F9E817CF8F3C00E02558 /* InfoPlist.strings in Resources */,
+				B435F9F017CF8F3C00E02558 /* Default.png in Resources */,
+				B435F9F217CF8F3C00E02558 /* Default@2x.png in Resources */,
+				B435F9F417CF8F3C00E02558 /* Default-568h@2x.png in Resources */,
+				B435F9FA17CF8F3C00E02558 /* ASMViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B435F9D617CF8F3C00E02558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435F9EA17CF8F3C00E02558 /* main.m in Sources */,
+				B435F9EE17CF8F3C00E02558 /* ASMAppDelegate.m in Sources */,
+				B435F9F717CF8F3C00E02558 /* ASMViewController.m in Sources */,
+				B435FA0317CF8F9C00E02558 /* UIImage+ASMPDF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B435F9E617CF8F3C00E02558 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B435F9E717CF8F3C00E02558 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B435F9F817CF8F3C00E02558 /* ASMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B435F9F917CF8F3C00E02558 /* en */,
+			);
+			name = ASMViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B435F9FB17CF8F3C00E02558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B435F9FC17CF8F3C00E02558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B435F9FE17CF8F3C00E02558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImage-ASMPDF/UIImage-ASMPDF-Prefix.pch";
+				INFOPLIST_FILE = "UIImage-ASMPDF/UIImage-ASMPDF-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B435F9FF17CF8F3C00E02558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIImage-ASMPDF/UIImage-ASMPDF-Prefix.pch";
+				INFOPLIST_FILE = "UIImage-ASMPDF/UIImage-ASMPDF-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B435F9D517CF8F3C00E02558 /* Build configuration list for PBXProject "UIImage-ASMPDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B435F9FB17CF8F3C00E02558 /* Debug */,
+				B435F9FC17CF8F3C00E02558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B435F9FD17CF8F3C00E02558 /* Build configuration list for PBXNativeTarget "UIImage-ASMPDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B435F9FE17CF8F3C00E02558 /* Debug */,
+				B435F9FF17CF8F3C00E02558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B435F9D217CF8F3C00E02558 /* Project object */;
+}
