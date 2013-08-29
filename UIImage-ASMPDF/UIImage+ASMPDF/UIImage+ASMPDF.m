@@ -254,7 +254,7 @@ static NSString* ASMPDFCacheTypeKey = @"com.amolloy.ASMPDFCacheType";
 	
 	if (ASMPDFMemoryCache & cacheType)
 	{
-		[[self memoryCache] setObject:UIImagePNGRepresentation(self)
+		[[self memoryCache] setObject:self
 							   forKey:cacheKey];
 	}
 	if (ASMPDFDiskCache & cacheType)
