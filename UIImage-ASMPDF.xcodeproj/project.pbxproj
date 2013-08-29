@@ -19,6 +19,7 @@
 		B435F9F717CF8F3C00E02558 /* ASMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B435F9F617CF8F3C00E02558 /* ASMViewController.m */; };
 		B435F9FA17CF8F3C00E02558 /* ASMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B435F9F817CF8F3C00E02558 /* ASMViewController.xib */; };
 		B435FA0317CF8F9C00E02558 /* UIImage+ASMPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = B435FA0217CF8F9C00E02558 /* UIImage+ASMPDF.m */; };
+		B4B0B16117CF963C00B6D357 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B4B0B16017CF963C00B6D357 /* test.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B435F9F917CF8F3C00E02558 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASMViewController.xib; sourceTree = "<group>"; };
 		B435FA0117CF8F9C00E02558 /* UIImage+ASMPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASMPDF.h"; sourceTree = "<group>"; };
 		B435FA0217CF8F9C00E02558 /* UIImage+ASMPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASMPDF.m"; sourceTree = "<group>"; };
+		B4B0B16017CF963C00B6D357 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		B435F9E417CF8F3C00E02558 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4B0B16017CF963C00B6D357 /* test.pdf */,
 				B435F9E517CF8F3C00E02558 /* UIImage-ASMPDF-Info.plist */,
 				B435F9E617CF8F3C00E02558 /* InfoPlist.strings */,
 				B435F9E917CF8F3C00E02558 /* main.m */,
@@ -177,6 +180,7 @@
 				B435F9F217CF8F3C00E02558 /* Default@2x.png in Resources */,
 				B435F9F417CF8F3C00E02558 /* Default-568h@2x.png in Resources */,
 				B435F9FA17CF8F3C00E02558 /* ASMViewController.xib in Resources */,
+				B4B0B16117CF963C00B6D357 /* test.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
