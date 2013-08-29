@@ -19,7 +19,7 @@ You can also specify a rectangular region within the PDF's first page to render,
 
 ```objective-c
 CGRect cropRect = CGRectMake(0, 0, 96, 96);
-UIImage* croppedImage = [UIImage imageWithPDFatURL:imageURL destinationSize:CGSizeMake(320, 415) cropRect:cropRect];
+UIImage* croppedImage = [UIImage imageWithPDFatURL:imageURL destinationSize:CGSizeMake(300, 300) cropRect:cropRect];
 ```
 
 The cropping rect should be specified in points. 
