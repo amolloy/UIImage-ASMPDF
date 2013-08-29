@@ -7,9 +7,10 @@
 //
 
 #import "ASMViewController.h"
+#import "UIImage+ASMPDF.h"
 
 @interface ASMViewController ()
-
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation ASMViewController
@@ -17,13 +18,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	NSURL* pdfURL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"pdf"];
+
+	NSMutableArray* images = [NSMutableArray arrayWithCapacity:4];
+	
+	for (int i = 0; i < 4; ++i)
+	{
+		UIImage* testImage = [UIImage imageWithPDFatURL:pdfURL
+										destinationSize:CGSizeMake(300, 300)
+											   cropRect:CGRectMake(i * 152, 0, 152, 152)];
+		
+		[images addObject:testImage];
+	}
+	
+	self.imageView.image = [UIImage animatedImageWithImages:images duration:10];
 }
 
 @end
