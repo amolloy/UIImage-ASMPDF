@@ -84,55 +84,62 @@ static NSString* ASMPDFCacheTypeKey = @"com.amolloy.ASMPDFCacheType";
 	}
 	else
 	{
-		UIGraphicsBeginImageContextWithOptions(destSize, opaque, scale);
-		CGContextRef ctx = UIGraphicsGetCurrentContext();
-		
-		CGContextSaveGState(ctx);
-		
-		UIColor* backgroundColor = [UIColor clearColor];
-		if (opaque)
-		{
-			backgroundColor = [UIColor whiteColor];
-		}
-		
-		CGContextSetFillColorWithColor(ctx, backgroundColor.CGColor);
-		
-		CGRect drawRect = CGRectMake(0, 0, destSize.width, destSize.height);
-		
-		CGContextFillRect(ctx, drawRect);
-		
-		CGContextScaleCTM(ctx, 1, -1);
-		CGContextTranslateCTM(ctx, 0, -CGRectGetHeight(drawRect));
-		
 		CGPDFDocumentRef pdf = CGPDFDocumentCreateWithURL((__bridge CFURLRef)url);
 		CGPDFPageRef page1 = CGPDFDocumentGetPage(pdf, 1);
-		
-		CGRect mediaRect = cropRect;
-		
-		if (CGRectIsEmpty(mediaRect))
+
+		if (!page1)
 		{
-			mediaRect = CGPDFPageGetBoxRect( page1, kCGPDFCropBox );
+			self = nil;
 		}
-		
-		CGContextScaleCTM(ctx,
-						  drawRect.size.width / mediaRect.size.width,
-						  drawRect.size.height / mediaRect.size.height);
-		CGContextTranslateCTM(ctx, -mediaRect.origin.x, -mediaRect.origin.y);
-		
-		CGContextDrawPDFPage(ctx, page1);
-		CGPDFDocumentRelease(pdf);
-		
-		CGContextRestoreGState(ctx);
-		
-		self = UIGraphicsGetImageFromCurrentImageContext();
-		
-		UIGraphicsEndImageContext();
-		
-		[self cacheImageForURL:url
-			   destinationSize:destSize
-						opaque:opaque
-						 scale:scale
-					  cropRect:cropRect];
+		else
+		{
+			UIGraphicsBeginImageContextWithOptions(destSize, opaque, scale);
+			CGContextRef ctx = UIGraphicsGetCurrentContext();
+			
+			CGContextSaveGState(ctx);
+			
+			UIColor* backgroundColor = [UIColor clearColor];
+			if (opaque)
+			{
+				backgroundColor = [UIColor whiteColor];
+			}
+			
+			CGContextSetFillColorWithColor(ctx, backgroundColor.CGColor);
+			
+			CGRect drawRect = CGRectMake(0, 0, destSize.width, destSize.height);
+			
+			CGContextFillRect(ctx, drawRect);
+			
+			CGContextScaleCTM(ctx, 1, -1);
+			CGContextTranslateCTM(ctx, 0, -CGRectGetHeight(drawRect));
+			
+			CGRect mediaRect = cropRect;
+			
+			if (CGRectIsEmpty(mediaRect))
+			{
+				mediaRect = CGPDFPageGetBoxRect( page1, kCGPDFCropBox );
+			}
+			
+			CGContextScaleCTM(ctx,
+							  drawRect.size.width / mediaRect.size.width,
+							  drawRect.size.height / mediaRect.size.height);
+			CGContextTranslateCTM(ctx, -mediaRect.origin.x, -mediaRect.origin.y);
+			
+			CGContextDrawPDFPage(ctx, page1);
+			CGPDFDocumentRelease(pdf);
+			
+			CGContextRestoreGState(ctx);
+			
+			self = UIGraphicsGetImageFromCurrentImageContext();
+			
+			UIGraphicsEndImageContext();
+			
+			[self cacheImageForURL:url
+				   destinationSize:destSize
+							opaque:opaque
+							 scale:scale
+						  cropRect:cropRect];
+		}
 	}
 	
 	return self;
