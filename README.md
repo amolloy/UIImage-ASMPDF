@@ -44,7 +44,3 @@ If you specify to use both memory and disk caches, the memory cache will be chec
 ## Limitations
 
 UIImage-ASMPDF currently only supports rendering the first page of a multipage PDF. Support for multiple pages ought to be easy enough to support, but I don't currently have use of it. Pull requests always welcome!
-
-## Notes
-
-This is currently barely tested and has not been used in any production code. You have been warned!
