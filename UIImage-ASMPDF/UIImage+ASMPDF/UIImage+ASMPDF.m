@@ -126,7 +126,6 @@ static NSString* ASMPDFCacheTypeKey = @"com.amolloy.ASMPDFCacheType";
 			CGContextTranslateCTM(ctx, -mediaRect.origin.x, -mediaRect.origin.y);
 			
 			CGContextDrawPDFPage(ctx, page1);
-			CGPDFDocumentRelease(pdf);
 			
 			CGContextRestoreGState(ctx);
 			
@@ -140,6 +139,8 @@ static NSString* ASMPDFCacheTypeKey = @"com.amolloy.ASMPDFCacheType";
 							 scale:scale
 						  cropRect:cropRect];
 		}
+
+		CGPDFDocumentRelease(pdf);
 	}
 	
 	return self;
