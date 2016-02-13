@@ -3,7 +3,7 @@ UIImage-ASMPDF
 
 A category on UIImage for loading PDFs, inspired by UIImage-PDF. UIImage-ASMPDF functions in much the same way as UIImage-PDF, but simplifies the implementation by removing the need for an extra UIView. UIImage-ASMPDF also allows you to specify a region within the PDF to render into an image, rather than always rendering the entire page. 
 
-### Cocoapods 
+### CocoaPods 
 `pod 'UIImage-ASMPDF'`
 
 ## Usage
